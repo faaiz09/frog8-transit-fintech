@@ -266,8 +266,17 @@ const ValueProposition: React.FC<ValuePropositionProps> = ({
                 </CardHeader>
                 <CardContent>
                   <p className="mb-4">
-                    We're live. Already deployed with BMRCL, NSDL PB, and built
-                    for scale.
+                    ✅ <strong>Regulatory-Ready, Field-Tested.</strong> Live
+                    with BMRCL, NSDL PB, and NPCI-aligned. FIME and PCI
+                    certified.
+                  </p>
+                  <p className="mb-4">
+                    ✅ <strong>Smart Distribution, Not Spray & Pray.</strong>{" "}
+                    Low-CAC, high-usage, and hyper-targeted via B2N.
+                  </p>
+                  <p className="mb-4">
+                    ✅ <strong>Infrastructure That Grows With the City.</strong>{" "}
+                    As metros expand, so do we.
                   </p>
                   <div className="bg-amber-50 p-4 rounded-md">
                     <h4 className="font-semibold text-amber-800 mb-2">

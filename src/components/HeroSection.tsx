@@ -8,7 +8,7 @@ interface HeroSectionProps {
 }
 
 const HeroSection = ({
-  headline = "Empowering Commuter-First Financial Access",
+  headline = "Empowering Commuter-First Financial Access. Where Transit Meets Fintech.",
   subheadline = "One card. One platform. One journey.",
 }: HeroSectionProps) => {
   return (

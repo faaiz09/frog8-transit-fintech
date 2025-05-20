@@ -99,7 +99,7 @@ const ModularComponents = ({ className = "" }: ModularComponentProps) => {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">What We Build</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Modular Infrastructure, Built for the Edge.
+            Modular Infrastructure for Commuter-First Financial Access
           </p>
         </motion.div>
 

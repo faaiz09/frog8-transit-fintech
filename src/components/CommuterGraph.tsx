@@ -165,6 +165,8 @@ const CommuterGraph: React.FC<CommuterGraphProps> = ({ className = "" }) => {
           <p className="text-lg font-medium text-primary">
             This is our moat.
             <br />
+            This is how we capture — and serve — the next 100 million.
+            <br />
             This is why India Next will be built on Frog8.
           </p>
         </div>

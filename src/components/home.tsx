@@ -5,12 +5,27 @@ import ModularComponents from "./ModularComponents";
 import ValueProposition from "./ValueProposition";
 import { Button } from "./ui/button";
 import { ArrowRight, Mail, Download } from "lucide-react";
+// Create our own Hyperspeed component since the package isn't available
+const Hyperspeed = ({ className = "" }) => {
+  return (
+    <div className={`absolute inset-0 overflow-hidden ${className}`}>
+      <div className="absolute top-10 left-10 w-40 h-40 rounded-full bg-blue-500 blur-3xl animate-pulse"></div>
+      <div className="absolute bottom-10 right-10 w-60 h-60 rounded-full bg-purple-500 blur-3xl animate-pulse"></div>
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full bg-indigo-500 blur-3xl animate-pulse"></div>
+    </div>
+  );
+};
 
 const Home = () => {
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <HeroSection />
+      {/* Hero Section with Hyperspeed effect */}
+      <div className="relative">
+        <Hyperspeed className="absolute inset-0 z-0" />
+        <div className="relative z-10">
+          <HeroSection />
+        </div>
+      </div>
 
       {/* Commuter Graph Section */}
       <CommuterGraph />
@@ -207,6 +222,7 @@ const Home = () => {
       {/* Let's Talk Section */}
       <section className="py-16 px-4 md:px-8 lg:px-16 bg-blue-600 text-white">
         <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Let's Talk</h2>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Let's Talk</h2>
           <p className="text-xl mb-10">
             If you're building for India Next —<br />
